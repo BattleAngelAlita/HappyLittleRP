@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14731b905a8db004b993166bed26c3f7, type: 3}
+  m_Name: CoarseShading
+  m_EditorClassIdentifier: 
+  coarseBlitMaterial: {fileID: 2100000, guid: 891ecb3ca6bf25942b94529f6704d98d, type: 2}
