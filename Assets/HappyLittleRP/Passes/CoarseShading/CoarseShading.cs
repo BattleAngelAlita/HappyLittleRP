@@ -8,12 +8,12 @@ public class CoarseShading : HappyLittlePass
 
 	public override void Execute(ScriptableRenderContext context, Camera camera, CullingResults cullingResults)
 	{
-		int frameBufferWidth  = 1024;
-		int frameBufferHeight = 576;
+		int frameBufferWidth  = Screen.width;
+		int frameBufferHeight = Screen.height;
 
 		int msaaRT = Shader.PropertyToID("_MsaaBuffer");
 		RenderTargetIdentifier  msaaRTID   = new RenderTargetIdentifier(msaaRT);
-		RenderTextureDescriptor msaaRTDesc = new RenderTextureDescriptor(frameBufferWidth / 2, frameBufferHeight / 2, RenderTextureFormat.DefaultHDR);
+		RenderTextureDescriptor msaaRTDesc = new RenderTextureDescriptor(frameBufferWidth / 2, frameBufferHeight / 2, RenderTextureFormat.DefaultHDR, 32);
 		msaaRTDesc.msaaSamples = 4;
 		msaaRTDesc.bindMS = true;
 
